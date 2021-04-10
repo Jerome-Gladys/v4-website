@@ -36,7 +36,7 @@ __1ère Etape : Branchement du capteur JSN-SR04T au Wemos D1 mini__
 
 Schéma : 
 
-! [schéma de montage] (site Web v4/fr/statique/projet cuve/schéma.png)
+![schema de montage](../../static/img/docs/cuve/schema.png)
 
 ```
 GND : GND
@@ -49,6 +49,7 @@ Trigger: Pin D7
 ```
 
 __2ème étape : L’intégration de MQTT dans Gladys__
+
 
 Suivre la procédure d’installation dans Gladys et une fois la configuration terminée, il faut créer un nouvel appareil MQTT avec les éléments ci-dessous
 
