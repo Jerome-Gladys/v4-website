@@ -36,7 +36,7 @@ __1ère Etape : Branchement du capteur JSN-SR04T au Wemos D1 mini__
 
 Schéma : 
 
-![schema de montage](../../static/img/docs/cuve/schema.png)
+![schema](../../static/img/docs/fr/tuto/cuve/schema.png)
 
 ```
 GND : GND
@@ -53,13 +53,9 @@ __2ème étape : L’intégration de MQTT dans Gladys__
 
 Suivre la procédure d’installation dans Gladys et une fois la configuration terminée, il faut créer un nouvel appareil MQTT avec les éléments ci-dessous
 
-<img width="746" alt="Capture d’écran 2021-03-14 à 20 32 43" src="https://user-images.githubusercontent.com/80550818/111081638-81dc6480-8504-11eb-926e-a0fc5547891f.png">
+![Mqtt1](../../static/img/docs/fr/tuto/cuve/mqtt-1.png)
 
-![Mqtt1](site Web v4 /fr /statique/ projet cuve /myqtt 1.png) 
-
-<img width="746" alt="Capture d’écran 2021-03-14 à 20 30 50" src="https://user-images.githubusercontent.com/80550818/111081581-4b064e80-8504-11eb-9ea7-beac635c160d.png">
-
-![Mqtt2](site Web v4/fr/statique/projet cuve/myqtt 2.png)
+![Mqtt2](../../static/img/docs/fr/tuto/cuve/mqtt-2.png)
 
 Puis "sauvegarder"
 
@@ -67,7 +63,7 @@ Pour finir vous pouvez créer le bandeau en page d’accueil afin de voir le ré
 
 Sur le Dashboard,  cliquez sur "éditer"  -> "appareils de la pièce" -> "jardin"
 
-<img width="319" alt="Capture d’écran 2021-03-14 à 20 35 08" src="https://user-images.githubusercontent.com/80550818/111081683-cec03b00-8504-11eb-8dc1-91e99e6c493e.png">
+![dashboard](../../static/img/docs/fr/tuto/cuve/dashboard.png)
 
 __3ème étape : Le code Arduino à télécharger dans le wemos (code maison à affiner ou améliorer )__
 
@@ -81,11 +77,11 @@ Branchez votre Wemos D1 mini puis installer le driver, ensuite lancez le logicie
 http://arduino.esp8266.com/stable/package_esp8266com_index.json
 ```
 
-<img width="924" alt="Capture d’écran 2021-03-08 à 09 31 07" src="https://user-images.githubusercontent.com/80550818/111081013-894e3e80-8501-11eb-84c8-8302f70f8d16.png">
+![Arduino-1](../../static/img/docs/fr/tuto/cuve/arduino-1.png)
 
 Ensuite,  allez dans "outils" -> "type de cartes" -> "le gestionnaire de carte" et recherchez "esp8266" puis cliquez sur "installer"
 
-<img width="802" alt="Capture d’écran 2021-03-08 à 09 39 29" src="https://user-images.githubusercontent.com/80550818/111081024-910de300-8501-11eb-89b1-3fdf93d4606e.png">
+![Arduino-2](../../static/img/docs/fr/tuto/cuve/arduino-2.png)
 
 Pour finir vous pouvez choisir votre carte dans  "outils" -> "type de cartes" et choisir "ESP8266board " puis "LOLIN(Wemos) D1 R2 & mini"
 
@@ -258,27 +254,27 @@ Une fois le code téléversé, vous pouvez brancher les cables avec le schéma d
 
 Vous pouvez créer différentes scènes et notamment vous prévenir si la cuve est presque vide ou vous envoyer 1fois/jour la capacité restante par exemple.
 
-<img width="501" alt="Capture d’écran 2021-03-14 à 20 37 20" src="https://user-images.githubusercontent.com/80550818/111081755-22cb1f80-8505-11eb-8cb8-da6b66bbe712.png">
+![scène](../../static/img/docs/fr/tuto/cuve/scène.png)
 
 1ère Scène : Notification cuve vide
 
-<img width="1013" alt="Capture d’écran 2021-03-14 à 20 38 52" src="https://user-images.githubusercontent.com/80550818/111081804-645bca80-8505-11eb-9e21-e3b7039e2f47.png">
+![scène-1-1](../../static/img/docs/fr/tuto/cuve/scène-1-1.png) 
 
-<img width="1011" alt="Capture d’écran 2021-03-14 à 20 39 18" src="https://user-images.githubusercontent.com/80550818/111081808-69207e80-8505-11eb-87bb-098fcd9d8117.png">
+![scène-1-2](../../static/img/docs/fr/tuto/cuve/scène-1-2.png) 
 
 2ème scène : Rapport Journalier Cuve
 
-<img width="1013" alt="Capture d’écran 2021-03-14 à 20 41 04" src="https://user-images.githubusercontent.com/80550818/111081905-cd434280-8505-11eb-9e68-8bce294298d3.png">
+![scène-2-1](../../static/img/docs/fr/tuto/cuve/scène-2-1.png) 
 
-<img width="1013" alt="Capture d’écran 2021-03-14 à 20 41 33" src="https://user-images.githubusercontent.com/80550818/111081912-d46a5080-8505-11eb-9c5a-d9c9a889c8fb.png">
+![scène-2-2](../../static/img/docs/fr/tuto/cuve/scène-2-2.png) 
 
-<img width="1011" alt="Capture d’écran 2021-03-14 à 20 41 56" src="https://user-images.githubusercontent.com/80550818/111081917-d92f0480-8505-11eb-8dbf-3782e2764832.png">
+![scène-2-3](../../static/img/docs/fr/tuto/cuve/scène-2-3.png) 
 
 Vous pouvez installer l'application télégram pour recevoir maintenant vos notifications.
 
 Quelques photos de mon installation
 
-![20210224_172243](https://user-images.githubusercontent.com/80550818/111082051-8570eb00-8506-11eb-94b0-95c071e0c473.jpg)
+![photo-1](../../static/img/docs/fr/tuto/cuve/photo-1.png) 
 
-![20210224_173532](https://user-images.githubusercontent.com/80550818/111082057-90c41680-8506-11eb-9fcc-2b94a9221bfe.jpg)
+![photo-2](../../static/img/docs/fr/tuto/cuve/photo-2.png) 
 
